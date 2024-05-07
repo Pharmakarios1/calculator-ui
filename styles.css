@@ -14,6 +14,8 @@ body{
     height: 67vh;
     margin: 40px auto;
     border-radius: 6px;
+    box-shadow: 2px 6px 4px rgba(0,0,0, 0.3);
+
 }
 
 .calculator{
@@ -29,7 +31,7 @@ form .display input{
     width: 92%;
     height: 35px;
     outline: 0;
-    border: 1px solid #b3adad;
+    border: 1px solid #eae5e5;
     border-radius: 5px;
     text-align: right;
     padding: 9px;
@@ -52,12 +54,36 @@ form .calc__buttons-left input{
     border-radius: 2px;
     cursor: pointer;
 }
+
+form  input:hover{ 
+    background-color: rgb(67, 104, 239);
+    border: 0;
+}
+
+
 form .calc__buttons-left .equal{
     height: 180px;
+    box-shadow: 2px 6px 4px rgba(0,0,0, 0.3);
+    
 }
+
+form .calc__buttons-left .equal:active{
+    background-color: rgba(67, 104, 239, 0.9);
+    
+}
+
 form .calc__buttons-left .dark__button{
     background-color: #e0dddd;
+    box-shadow: 2px 6px 4px rgba(0,0,0, 0.3);
 }
+
+form .calc__buttons-left .dark__button:active{
+    background-color: rgb(224, 221, 221, 0.8);
+}
+
+
+
+
 form .calc__buttons{
     margin: .6rem;
     display: flex;
@@ -74,16 +100,27 @@ form .calc__button input{
    background-color: whitesmoke;
    border-radius: 2px;
    cursor: pointer;
+   box-shadow: 2px 6px 4px rgba(0,0,0, 0.3);
   
+}
+
+form .calc__button input:active{
+   background-color: rgb(245, 245, 245, .1);
 }
 
 form .calc__buttons .dark__button input{
     background-color: #e0dddd;
     border: 0;
 }
+
+form .calc__buttons .dark__button input:active{
+    background-color: rgb(224, 221, 221,.8);
+}
+
+
+
 form input.equal{
     background-color: rgb(67, 104, 239);
     color: white;
     border: 0;
-    /* height: 180px; */
 }

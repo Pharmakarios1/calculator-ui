@@ -5,44 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="calculator">
         <form action="">
           <div class="display">
-            <input type="text" />
+            <input type="text" class="displayEl" />
           </div>
           <div class="calc">
             <div class="calc__buttons">
               <div class="calc__button dark__button">
-                <input type="button" value="+" />
-                <input type="button" value="-" />
-                <input type="button" value="x" />
+                <input type="button" value="+" class="plus" />
+                <input type="button" value="-" class="minus" />
+                <input type="button" value="x" class="multiply" />
               </div>
               <div class="calc__button">
-                <input type="button" value="7" />
-                <input type="button" value="8" />
-                <input type="button" value="9" />
+                <input type="button" value="7" class="seven" />
+                <input type="button" value="8" class="eight" />
+                <input type="button" value="9" class="nine" />
               </div>
               <div class="calc__button">
-                <input type="button" value="4" />
-                <input type="button" value="5" />
-                <input type="button" value="6" />
+                <input type="button" value="4" class="four" />
+                <input type="button" value="5" class="five" />
+                <input type="button" value="6" class="six" />
               </div>
               <div class="calc__button">
-                <input type="button" value="1" />
-                <input type="button" value="2" />
-                <input type="button" value="3" />
+                <input type="button" value="1" class="one" />
+                <input type="button" value="2" class="two" />
+                <input type="button" value="3" class="three" />
               </div>
               <div class="calc__button">
-                <input type="button" value="0" />
-                <input type="button" value="." />
-                <input type="button" value="C" />
+                <input type="button" value="0" class="zero" />
+                <input type="button" value="." class="period" />
+                <input type="button" value="C" class="clear" />
               </div>
             </div>
             <div class="calc__buttons-left">
-              <input type="button" value="÷" class="dark__button" />
+              <input type="button" value="÷" class="dark__button divide" />
               <input type="button" value="=" class="equal" />
             </div>
           </div>

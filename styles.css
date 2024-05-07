@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #efeded;
+}
+
+
+.container{
+    border: 1px solid #d6cece;
+    width: 300px;
+    height: 67vh;
+    margin: 40px auto;
+    border-radius: 6px;
+}
+
+.calculator{
+background-color: white;  
+width: 95%;  
+height: 95%;
+margin: 8px auto;
+border-radius: 6px;
+}
+
+form .display input{
+    margin: .6rem .6rem .1rem;
+    width: 92%;
+    height: 35px;
+    outline: 0;
+    border: 1px solid #b3adad;
+    border-radius: 5px;
+    text-align: right;
+    padding: 9px;
+   
+}
+
+form .calc{
+    display: flex;
+
+}
+form .calc__buttons-left input{ 
+    display: flex;
+    margin: 10px auto;
+    width: 61px;
+    height: 40px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+form .calc__buttons-left .equal{
+    height: 180px;
+}
+form .calc__buttons-left .dark__button{
+    background-color: #e0dddd;
+}
+form .calc__buttons{
+    margin: .6rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 6px;
+}
+form .calc__button input{
+   width: 62px;
+   height: 40px;
+   margin: 1px 0;
+
+   border: 1px solid #b3adad;
+   background-color: whitesmoke;
+   border-radius: 2px;
+   cursor: pointer;
+  
+}
+
+form .calc__buttons .dark__button input{
+    background-color: #e0dddd;
+    border: 0;
+}
+form input.equal{
+    background-color: rgb(67, 104, 239);
+    color: white;
+    border: 0;
+    /* height: 180px; */
+}
